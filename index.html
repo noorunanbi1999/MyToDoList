@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List Manager</title>
+    <link rel="stylesheet" href="css\style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="alertOuterNone">
+      <div id="alertDialog">
+        <p id="alertMess"></p>
+      </div>
+      <button id="closeBtn" onclick="deactivateAlert()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <h1 id="mainHeading">Todo List</h1>
+    <div class="adderContainer">
+      <input
+        type="text"
+        id="adderInput"
+        placeholder="Enter your task description"
+      />
+      <button class="btn" onclick="addTask()">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </div>
+
+    <div class="taskList">
+      <div id="taskempty">No Tasks created</div>
+      <div id="tasks" class="notask"></div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/88551bfede.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/action.js"></script>
+    <footer>
+      <p style="text-align: center">Copyrights &copy; Noor Un Nabi</p>
+    </footer>
+  </body>
+</html>
